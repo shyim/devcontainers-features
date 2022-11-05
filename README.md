@@ -22,7 +22,7 @@ See the relevant feature's README for supported options.
 {
     "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
     "features": {
-        "ghcr.io/shyim/features/symfony-cli": {}
+        "ghcr.io/shyim/devcontainers-features/symfony-cli": {}
     }
 }
 ```
