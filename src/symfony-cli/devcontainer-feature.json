@@ -1,0 +1,7 @@
+{
+    "name": "symfony-cli",
+    "id": "symfony-cli",
+    "version": "0.0.1",
+    "description": "Installs Symfony CLI",
+    "documentationURL": "https://github.com/shyim/devcontainers-features/tree/main/src/symfony-cli"
+}
