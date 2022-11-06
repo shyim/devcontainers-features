@@ -17,6 +17,7 @@ jobs:
       matrix:
         features:
           - symfony-cli
+          - php
         baseImage:
           - debian:latest
           - ubuntu:latest

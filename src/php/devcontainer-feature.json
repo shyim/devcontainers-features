@@ -1,0 +1,43 @@
+{
+    "name": "php",
+    "id": "php",
+    "version": "0.0.1",
+    "description": "Installs PHP",
+    "documentationURL": "https://github.com/shyim/devcontainers-features/tree/main/src/php",
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "8.2",
+                "8.1",
+                "8.0",
+                "7.4"
+            ],
+            "default": "8.1",
+            "description": "Select or enter a PHP version"
+        },
+        "installComposer": {
+            "type": "boolean",
+            "default": true,
+            "description": "Install PHP Composer?"
+        },
+        "extensionsExtra": {
+            "type": "string",
+            "default": "zip"
+        },
+        "disableAllExtensions": {
+            "type": "boolean",
+            "default": false
+        }
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "bmewburn.vscode-intelephense-client"
+            ]
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}
