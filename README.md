@@ -9,6 +9,7 @@ This project **Features** is a set of reusable 'features'. Quickly add a tool/cl
 **List of features:**
 
 * [symfony-cli](src/symfony-cli/README.md): Install a Symfony-cli into your Devcontainer
+* [php](src/php/README.md): Install a PHP + Composer into your Devcontainer
 
 ## Usage
 
