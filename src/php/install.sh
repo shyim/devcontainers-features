@@ -29,8 +29,6 @@ disable_extensions() {
             rm -f "/etc/php/$VERSION/phpdbg/conf.d/$FILENAME"
         fi
     done
-
-    ls -la /etc/php/$VERSION/cli/conf.d/
 }
 
 OS=$(awk -F= '/^NAME/{print $2}' /etc/os-release)
@@ -131,8 +129,6 @@ command -v xz >/dev/null || prerequisites+=('xz-utils')
 apt-get update
 
 apt-get install --no-install-recommends -y "${prerequisites[@]}"
-
-#apt-get install -y wget xz-utils
 
 wget -q "https://github.com/shivammathur/php-builder/releases/download/${VERSION}/php_${VERSION}+${filename}" -O php.tar.xz
 
