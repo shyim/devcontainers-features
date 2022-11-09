@@ -45,6 +45,9 @@ prerequisites+=('tzdata')
 prerequisites+=('libxml2')
 prerequisites+=('libpcre2-8-0')
 
+# Needed by php-fpm
+prerequisites+=('libapparmor1')
+
 for element in ${EXTENSIONS_ARRAY[@]};
 do
     case $element in
@@ -141,6 +144,10 @@ update-alternatives --install /usr/bin/php-config php-config "/usr/bin/php-confi
 update-alternatives --install /usr/bin/phpize phpize "/usr/bin/phpize${VERSION}" 100
 update-alternatives --install /usr/bin/php-cgi php-cgi "/usr/bin/php-cgi${VERSION}" 100
 update-alternatives --install /usr/sbin/php-fpm php-fpm "/usr/sbin/php-fpm${VERSION}" 100
+
+# Setup php session directory
+mkdir -p /var/lib/php/sessions/
+chown -R 1000:1000 /var/lib/php/sessions/
 
 if [[ $INSTALLCOMPOSER == "true" ]]; then
     wget -q https://getcomposer.org/installer -O composer-setup.php
