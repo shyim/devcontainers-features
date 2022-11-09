@@ -19,7 +19,7 @@ Installs PHP
 |-----|-----|-----|-----|
 | version | Select or enter a PHP version | string | 8.1 |
 | installComposer | Install PHP Composer? | boolean | true |
-| extensionsExtra | - | string | zip |
+| extensionsExtra | - | string | - |
 | disableAllExtensions | - | boolean | false |
 
 ## Composer
