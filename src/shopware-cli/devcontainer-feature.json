@@ -1,0 +1,7 @@
+{
+    "name": "shopware-cli",
+    "id": "shopware-cli",
+    "version": "0.0.1",
+    "description": "Installs Shopware CLI",
+    "documentationURL": "https://github.com/shyim/devcontainers-features/tree/main/src/shopware-cli"
+}

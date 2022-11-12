@@ -9,11 +9,12 @@ This project **Features** is a set of reusable 'features'. Quickly add a tool/cl
 **List of features:**
 
 * [symfony-cli](src/symfony-cli/README.md): Install a Symfony-cli into your Devcontainer
+* [shopware-cli](src/shopware-cli/README.md): Install a Shopware-cli into your Devcontainer
 * [php](src/php/README.md): Install a PHP + Composer into your Devcontainer
 
 ## Usage
 
-To reference a feature from this repository, add the desired features to a devcontainer.json. Each feature has a README.md that shows how to reference the feature and which options are available for that feature.
+To reference a feature from this repository, add the desired features to devcontainer.json. Each feature has a README.md that shows how to reference the feature and which options are available for that feature.
 
 The example below installs the *symfony-cli* declared in the `./src` directory of this repository.
 
