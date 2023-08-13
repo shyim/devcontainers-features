@@ -122,8 +122,10 @@ elif [[ "$OS" == '"Debian GNU/Linux"' ]]; then
 
     if [[ "$VERSION_CODENAME" == "buster" ]]; then
         filename="debian10.tar.xz"
-    else
+    elif [[ "$VERSION_CODENAME" == "bullseye" ]]; then
         filename="debian11.tar.xz"
+    else
+        filename="debian12.tar.xz"
     fi
 fi
 
