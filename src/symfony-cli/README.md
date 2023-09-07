@@ -7,9 +7,7 @@ Installs Symfony CLI
 
 ```json
 "features": {
-    "ghcr.io/shyim/devcontainers-features/symfony-cli:0": {
-        "version": "latest"
-    }
+    "ghcr.io/shyim/devcontainers-features/symfony-cli:0": {}
 }
 ```
 

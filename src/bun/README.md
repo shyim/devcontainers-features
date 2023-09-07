@@ -1,7 +1,7 @@
 
-# Bun
+# bun (bun)
 
-Installs Bun and Bun is an all-in-one toolkit for JavaScript and TypeScript apps
+Bun is an all-in-one toolkit for JavaScript and TypeScript apps.
 
 ## Example Usage
 
