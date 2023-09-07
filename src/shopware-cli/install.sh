@@ -9,7 +9,7 @@ then
     apt-get install -y curl
 fi
 
-curl https://github.com/FriendsOfShopware/shopware-cli/releases/download/0.1.44/shopware-cli_Linux_x86_64.tar.gz -L -o cli.tar.gz
+curl https://github.com/FriendsOfShopware/shopware-cli/releases/latest/download/shopware-cli_Linux_x86_64.tar.gz -L -o cli.tar.gz
 
 mkdir /tmp/sw-cli
 tar -xzf cli.tar.gz -C /tmp/sw-cli
