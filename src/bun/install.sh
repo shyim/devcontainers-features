@@ -21,4 +21,5 @@ else
     apt-get install -y ${prerequisites[@]}
 fi
 
+export BUN_INSTALL=/usr/local
 curl -fsSL https://bun.sh/install | bash
