@@ -1,0 +1,7 @@
+{
+    "name": "bun",
+    "id": "bun",
+    "version": "0.0.1",
+    "description": "Bun is an all-in-one toolkit for JavaScript and TypeScript apps.",
+    "documentationURL": "https://github.com/shyim/devcontainers-features/tree/main/src/bun"
+}
