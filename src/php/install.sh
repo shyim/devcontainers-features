@@ -105,10 +105,12 @@ if [[ "$OS" == '"Ubuntu"' ]]; then
     apt-get install -y gnupg ca-certificates
 
     if [[ "$VERSION_CODENAME" == "focal" ]]; then
+        echo "Detected: Ubuntu Focal (20.04)"
         prerequisites+=('libssl1.1')
         filename="ubuntu20.04.tar.xz"
         echo "deb https://ppa.launchpadcontent.net/ondrej/php/ubuntu focal main" > /etc/apt/sources.list.d/ondrej-php.list
     else
+        echo "Detected: Ubuntu Jammy (22.04)"
         filename="ubuntu22.04.tar.xz"
         echo "deb https://ppa.launchpadcontent.net/ondrej/php/ubuntu jammy main" > /etc/apt/sources.list.d/ondrej-php.list
     fi
@@ -121,10 +123,13 @@ elif [[ "$OS" == '"Debian GNU/Linux"' ]]; then
     sh -c 'echo "deb [signed-by=/usr/share/keyrings/deb.sury.org-php.gpg] https://packages.sury.org/php/ $(lsb_release -sc) main" > /etc/apt/sources.list.d/php.list'
 
     if [[ "$VERSION_CODENAME" == "buster" ]]; then
+        echo "Detected: Debian 10"
         filename="debian10.tar.xz"
     elif [[ "$VERSION_CODENAME" == "bullseye" ]]; then
+        echo "Detected: Debian 11"
         filename="debian11.tar.xz"
     else
+        echo "Detected: Debian 12"
         filename="debian12.tar.xz"
     fi
 fi
@@ -134,6 +139,8 @@ command -v xz >/dev/null || prerequisites+=('xz-utils')
 apt-get update
 
 apt-get install --no-install-recommends -y "${prerequisites[@]}"
+
+echo "Downloading PHP ${VERSION} from https://github.com/shivammathur/php-builder/releases/download/${VERSION}/php_${VERSION}+${filename}"
 
 wget -q "https://github.com/shivammathur/php-builder/releases/download/${VERSION}/php_${VERSION}+${filename}" -O php.tar.xz
 
