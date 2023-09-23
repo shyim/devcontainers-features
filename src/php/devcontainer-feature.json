@@ -1,7 +1,7 @@
 {
     "name": "php",
     "id": "php",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "Installs PHP",
     "documentationURL": "https://github.com/shyim/devcontainers-features/tree/main/src/php",
     "options": {
