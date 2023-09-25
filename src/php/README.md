@@ -1,7 +1,7 @@
 
 # php (php)
 
-Installs PHP
+Installs PHP in Debian/Ubuntu based dev containers
 
 ## Example Usage
 
@@ -15,16 +15,10 @@ Installs PHP
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select or enter a PHP version | string | 8.1 |
+| version | Select or enter a PHP version | string | 8.2 |
 | installComposer | Install PHP Composer? | boolean | true |
 | extensionsExtra | - | string | - |
 | disableAllExtensions | - | boolean | false |
-
-## Customizations
-
-### VS Code Extensions
-
-- `bmewburn.vscode-intelephense-client`
 
 ## Composer
 
