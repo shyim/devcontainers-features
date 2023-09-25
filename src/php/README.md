@@ -7,9 +7,7 @@ Installs PHP
 
 ```json
 "features": {
-    "ghcr.io/shyim/devcontainers-features/php:0": {
-        "version": "latest"
-    }
+    "ghcr.io/shyim/devcontainers-features/php:0": {}
 }
 ```
 
@@ -21,6 +19,12 @@ Installs PHP
 | installComposer | Install PHP Composer? | boolean | true |
 | extensionsExtra | - | string | - |
 | disableAllExtensions | - | boolean | false |
+
+## Customizations
+
+### VS Code Extensions
+
+- `bmewburn.vscode-intelephense-client`
 
 ## Composer
 

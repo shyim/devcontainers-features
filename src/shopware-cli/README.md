@@ -7,9 +7,7 @@ Installs Shopware CLI
 
 ```json
 "features": {
-    "ghcr.io/shyim/devcontainers-features/shopware-cli:0": {
-        "version": "latest"
-    }
+    "ghcr.io/shyim/devcontainers-features/shopware-cli:0": {}
 }
 ```
 
