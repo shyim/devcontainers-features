@@ -26,6 +26,8 @@ prerequisites=('unzip')
 # Needed by php base
 prerequisites+=('tzdata')
 
+prerequisites=('curl')
+
 if [[ "$OS" == '"Ubuntu"' ]]; then
     apt-get update
     apt-get install -y gnupg ca-certificates
