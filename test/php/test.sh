@@ -8,7 +8,7 @@ source dev-container-features-test-lib
 # Feature-specific tests
 # The 'check' command comes from the dev-container-features-test-lib.
 check "php -v" php -v
-check "php-fpm -v" php-fpm -v
+check "php-fpm -v" php-fpm8.2 -v
 check "composer -v" composer -v
 
 # Report result

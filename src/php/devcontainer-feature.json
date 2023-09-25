@@ -1,8 +1,8 @@
 {
     "name": "php",
     "id": "php",
-    "version": "0.0.3",
-    "description": "Installs PHP",
+    "version": "0.1.0",
+    "description": "Installs PHP in Debian/Ubuntu based dev containers",
     "documentationURL": "https://github.com/shyim/devcontainers-features/tree/main/src/php",
     "options": {
         "version": {
@@ -13,7 +13,7 @@
                 "8.0",
                 "7.4"
             ],
-            "default": "8.1",
+            "default": "8.2",
             "description": "Select or enter a PHP version"
         },
         "installComposer": {
@@ -28,13 +28,6 @@
         "disableAllExtensions": {
             "type": "boolean",
             "default": false
-        }
-    },
-    "customizations": {
-        "vscode": {
-            "extensions": [
-                "bmewburn.vscode-intelephense-client"
-            ]
         }
     },
     "installsAfter": [
