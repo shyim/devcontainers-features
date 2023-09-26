@@ -11,6 +11,7 @@ This project **Features** is a set of reusable 'features'. Quickly add a tool/cl
 * [symfony-cli](src/symfony-cli/README.md): Install a Symfony-cli into your Devcontainer
 * [shopware-cli](src/shopware-cli/README.md): Install a Shopware-cli into your Devcontainer
 * [php](src/php/README.md): Install a PHP + Composer into your Devcontainer
+* [bun](src/bun/README.md): Install a Bun into your Devcontainer
 
 ## Usage
 
