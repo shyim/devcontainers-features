@@ -26,7 +26,7 @@ prerequisites=('unzip')
 # Needed by php base
 prerequisites+=('tzdata')
 
-prerequisites=('curl')
+prerequisites+=('curl')
 
 if [[ "$OS" == '"Ubuntu"' ]]; then
     apt-get update
