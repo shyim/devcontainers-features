@@ -35,9 +35,12 @@ if [[ "$OS" == '"Ubuntu"' ]]; then
     if [[ "$VERSION_CODENAME" == "focal" ]]; then
         echo "Detected: Ubuntu Focal (20.04)"
         echo "deb https://ppa.launchpadcontent.net/ondrej/php/ubuntu focal main" > /etc/apt/sources.list.d/ondrej-php.list
-    else
+    elif [[ "$VERSION_CODENAME" == "jammy" ]]; then
         echo "Detected: Ubuntu Jammy (22.04)"
         echo "deb https://ppa.launchpadcontent.net/ondrej/php/ubuntu jammy main" > /etc/apt/sources.list.d/ondrej-php.list
+    else
+        echo "Detected: Ubuntu Noble (24.04)"
+        echo "deb https://ppa.launchpadcontent.net/ondrej/php/ubuntu noble main" > /etc/apt/sources.list.d/ondrej-php.list
     fi
 
     apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 4F4EA0AAE5267A6C
