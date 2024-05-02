@@ -1,0 +1,18 @@
+{
+    "install_php_version": {
+        "image": "ubuntu:latest",
+        "features": {
+            "php": {
+                "version": "8.0"
+            }
+        }
+    },
+    "install_php_xdebug": {
+        "image": "ubuntu:latest",
+        "features": {
+            "php": {
+              "extensionsExtra": "xdebug"
+            }
+        }
+    }
+}
