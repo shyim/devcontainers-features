@@ -67,3 +67,13 @@ if [[ $INSTALLCOMPOSER == "true" ]]; then
     php composer-setup.php --install-dir=/usr/local/bin --filename=composer
     rm composer-setup.php
 fi
+
+if [[ "${MODULES[@]}" =~ "xdebug" ]]; then
+    XDEBUG_INI="/etc/php/${VERSION}/mods-available/xdebug.ini"
+
+    echo "" >> "${XDEBUG_INI}"
+    echo "xdebug.mode = debug" >> "${XDEBUG_INI}"
+    echo "xdebug.start_with_request = yes" >> "${XDEBUG_INI}"
+    echo "xdebug.client_port = 9003" >> "${XDEBUG_INI}"
+fi
+
