@@ -76,7 +76,6 @@ if [[ "${MODULES[@]}" =~ "xdebug" ]]; then
 
     echo "" >> "${XDEBUG_INI}"
     echo "xdebug.mode = debug" >> "${XDEBUG_INI}"
-    echo "xdebug.start_with_request = yes" >> "${XDEBUG_INI}"
     echo "xdebug.client_port = 9003" >> "${XDEBUG_INI}"
 fi
 
