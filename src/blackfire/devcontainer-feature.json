@@ -1,0 +1,29 @@
+{
+    "name": "blackfire",
+    "id": "blackfire",
+    "version": "0.0.1",
+    "description": "Blackfire is a performance management solution for PHP applications.",
+    "documentationURL": "https://github.com/shyim/devcontainers-features/tree/main/src/blackfire",
+    "options": {
+        "server-id": {
+            "description": "Blackfire Server ID",
+            "type": "string",
+            "default": ""
+        },
+        "server-token": {
+            "description": "Blackfire Server Token",
+            "type": "string",
+            "default": ""
+        },
+        "client-id": {
+            "description": "Blackfire Client ID",
+            "type": "string",
+            "default": ""
+        },
+        "client-token": {
+            "description": "Blackfire Client Token",
+            "type": "string",
+            "default": ""
+        }
+    }
+}

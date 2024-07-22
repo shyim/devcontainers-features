@@ -1,0 +1,13 @@
+{
+    "blackfire_wolfi": {
+        "image": "quay.io/friendsofshopware/devcontainer:base-8.3",
+        "features": {
+            "blackfire": {
+                "server-id": "server-id",
+                "server-token": "server-token",
+                "client-id": "client-id",
+                "client-token": "client-token"
+            }
+        }
+    }
+}
