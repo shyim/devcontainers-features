@@ -27,7 +27,7 @@ If you want to enable additional php extensions, you can use the following:
     "features": {
         "ghcr.io/shyim/devcontainers-features/php:latest": {
             "version": "8.0",
-            "extensionsExtra": "xdebug redis"
+            "extensionsExtra": "xdebug,redis,mbstring"
         }
     }
 }

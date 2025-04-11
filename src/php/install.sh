@@ -10,12 +10,12 @@ if [[ "$DISABLEALLEXTENSIONS" == "true" ]]; then
 fi
 
 if [[ -n "$EXTENSIONSEXTRA" ]]; then
-    EXTENSIONS="$EXTENSIONS $EXTENSIONSEXTRA"
+    EXTENSIONS="$EXTENSIONS,$EXTENSIONSEXTRA"
 fi
 
-EXTENSIONS="cgi cli fpm phpdbg $EXTENSIONS"
+EXTENSIONS="cgi,cli,fpm,phpdbg,$EXTENSIONS"
 
-MODULES=($EXTENSIONS)
+MODULES=(${EXTENSIONS//,/ })
 
 OS=$(awk -F= '/^NAME/{print $2}' /etc/os-release)
 VERSION_CODENAME=$(awk -F= '$1=="VERSION_CODENAME" { print $2 ;}' /etc/os-release)
@@ -78,4 +78,3 @@ if [[ "${MODULES[@]}" =~ "xdebug" ]]; then
     echo "xdebug.mode = debug" >> "${XDEBUG_INI}"
     echo "xdebug.client_port = 9003" >> "${XDEBUG_INI}"
 fi
-
