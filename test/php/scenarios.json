@@ -7,11 +7,27 @@
             }
         }
     },
+    "install_php_version_83": {
+        "image": "ubuntu:latest",
+        "features": {
+            "php": {
+                "version": "8.3"
+            }
+        }
+    },
     "install_php_xdebug": {
         "image": "ubuntu:latest",
         "features": {
             "php": {
               "extensionsExtra": "xdebug"
+            }
+        }
+    },
+    "install_php_xdebug_redis": {
+        "image": "ubuntu:latest",
+        "features": {
+            "php": {
+              "extensionsExtra": "xdebug,redis"
             }
         }
     }
