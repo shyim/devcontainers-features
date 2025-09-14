@@ -3,7 +3,7 @@
 export DEBIAN_FRONTEND="noninteractive"
 
 set -e
-EXTENSIONS="bcmath bz2 curl gd gmp intl opcache pgsql mysql readline soap xml xsl zip sqlite"
+EXTENSIONS="bcmath bz2 curl gd gmp intl opcache pgsql mbstring mysql readline soap xml xsl zip sqlite"
 
 if [[ "$DISABLEALLEXTENSIONS" == "true" ]]; then
     EXTENSIONS=""
